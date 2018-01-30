@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -30,7 +31,7 @@ public class TextAreaFrame extends JFrame {
         // add components to content pane
 
         Container contentPane = getContentPane();
-        contentPane.add(inputArea, "Center");
+        contentPane.add(inputArea, BorderLayout.CENTER);
 
         // arrange the label and text field in a panel
 
@@ -50,7 +51,7 @@ public class TextAreaFrame extends JFrame {
         southPanel.add(resultPanel);
         southPanel.add(buttonPanel);
 
-        contentPane.add(southPanel, "South");
+        contentPane.add(southPanel, BorderLayout.SOUTH);
     }
 
     /**
